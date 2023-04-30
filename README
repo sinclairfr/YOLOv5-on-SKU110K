@@ -1,0 +1,16 @@
+YOLOv5-SKU110k-Detection
+This repository contains the code, dataset, and training details for a custom object detection model using YOLOv5 trained on the SKU110k dataset. The model aims to detect and classify retail products in images, making it suitable for various applications such as inventory management, retail analytics, and smart shopping.
+
+Table of Contents
+Introduction
+Installation
+Dataset
+Training
+Evaluation
+Inference
+License
+Acknowledgements
+Introduction
+YOLOv5 is a state-of-the-art object detection model known for its real-time performance and high accuracy. In this repository, we train YOLOv5 on the SKU110k dataset, which contains images of retail products in various environments.
+
+Installation
