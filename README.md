@@ -65,9 +65,9 @@ Training
 
 To train YOLOv5 on the SKU110k dataset, run the following command:
 
-    ```
-    python train.py --img 640 --batch 16 --epochs 100 --data sku110k.yaml --cfg yolov5s.yaml --weights yolov5s.pt
-    ```
+```
+python train.py --img 640 --batch 16 --epochs 100 --data sku110k.yaml --cfg yolov5s.yaml --weights yolov5s.pt
+```
 
 Replace `yolov5s.yaml` and `yolov5s.pt` with other YOLOv5 variants (such as `yolov5m`, `yolov5l`, or `yolov5x`) for larger models and improved performance.
 
@@ -76,19 +76,18 @@ Evaluation
 
 To evaluate the trained model on the validation set, run the following command:
 
-
-    ```
-    python val.py --data sku110k.yaml --weights runs/train/exp/weights/best.pt --iou-thres 0.5
-    ```
+```
+python val.py --data sku110k.yaml --weights runs/train/exp/weights/best.pt --iou-thres 0.5
+```
 
 Inference
 ---------
 
 To run inference on sample images or a video, use the `detect.py` script:
 
-    ```
-    python detect.py --source path/to/your/image_or_video --weights runs/train/exp/weights/best.pt --conf 0.25 --iou-thres 0.5
-    ```
+```
+python detect.py --source path/to/your/image_or_video --weights runs/train/exp/weights/best.pt --conf 0.25 --iou-thres 0.5
+```
 
 The output images or video with bounding boxes will be saved in the `runs/detect` folder.
 
